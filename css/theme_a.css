@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+ul li{list-style:none;}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+.header{background:#fff;text-align: center; background: #49a6fd; background: -webkit-linear-gradient(#4ba7fd, #86cdfe); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#4ba7fd, #86cdfe); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#4ba7fd, #86cdfe); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#4ba7fd, #86cdfe); /* 标准的语法 */}
+a.logo{font-size:20px;font-weight: 600;color:#fff;text-align: center;line-height: 60px;}
+a.logo:hover{text-decoration:none;}
+.nav_an{font-size:18px;line-height: 80px;color:#333;text-align: center;}
+.nav_an a{color:#333;width: 100%;display: inline-block;}
+.nav_an a:hover{text-decoration:none;position: relative;}
+.nav_an a i{display:block;width:32px;height: 5px;background: #49a6fd;position: absolute;bottom:15px;left: 50%;margin-left: -16px;z-index: 100;border-radius: 20px;display: none;}
+.nav_an.nav_an_active a i{display:block;}
+.nav_an:hover{background:#f3f3f3;}
+.nav_an.nav_an_active a{color:#49a6fd;}
+.nav_a{float:right; list-style-type: none;margin-top:25px;padding: 0;}
+.nav_a li{float:left;font-size:16px;}
+.nav_a li a{color:#12052f;display: inline-block;line-height: 50px;width:56px;text-align: center;}
+.nav_a li a:hover{text-decoration:none;color:#5e21e4;}
+
+.thumbnail{padding: 8px; border: none;box-shadow: 0 4px 16px #ebebeb;}
