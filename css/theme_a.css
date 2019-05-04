@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+a:hover{text-decoration:none;}
 .fR{float: right;}
 .fL{float:left;}
 ul li{list-style:none;}
@@ -51,6 +52,7 @@ border-radius: 14px;}
 .module_B.rank_left{padding-left: 35px;}
 .module_B h3{font-size:16px;color:#333;text-align: left;margin-bottom: 20px;}
 .module_B h3 a{float: right;margin-right: 1px;color:#333;}
+.module_B h3 a:hover{text-decoration:none;}
 .div_app_y{padding-left: 6px;height: 55px;margin-bottom: 20px;}
 
 .app_brief{float:left;width:160px;margin-left: 15px;}
@@ -69,3 +71,9 @@ text-overflow: ellipsis; }
 .icon_or{width:24px;height:24px;margin:0 auto;}
 .icon_or img{width:100%;height:100%;}
 .app_or p{font-size:14px;line-height:28px;color:#333;}
+
+.nav{height:48px;background: #fff;font-size:16px;line-height: 48px;color:#333;text-align: center;border-bottom:1px solid #eee;}
+.back{line-height:48px;padding:0 20px;position:absolute;left:0;color:#333;}
+.back:hover{text-decoration:none;}
+
+
