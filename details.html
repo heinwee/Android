@@ -12,7 +12,10 @@
 </head>
 
 <body style="padding-top: 68px;">
-
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10 col-lg-offset-1">
+	
     <div class="nav navbar-fixed-top">
         <a href="index.html" class="back glyphicon glyphicon-menu-left"></a>
         应用详情
@@ -32,6 +35,7 @@
         <li><img src="images/img_detail_1.png" /> </li>
         <li><img src="images/img_detail_1.png" /> </li>
         <li><img src="images/img_detail_1.png" /> </li>
+		 <li><img src="images/img_detail_1.png" /> </li>
     </ul>
     <div class="module_B">
         <div class="info_app">
@@ -97,7 +101,9 @@
 
     </div>
 
-
+		</div>
+	</div>
+	</div>
 
 
 
@@ -109,7 +115,7 @@
         (function($) {
             $.fn.moreText = function(options) {
                 var defaults = {
-                    maxLength: 90,
+                    maxLength: 200,
                     mainCell: ".info_app",
                     openBtn: '展开全部',
                     closeBtn: '收起介绍'
@@ -144,7 +150,7 @@
 
         $(function() {
             $(".module_B").moreText({
-                maxLength: 60, //默认最大显示字数，超过...
+                maxLength: 200, //默认最大显示字数，超过...
                 mainCell: '.info_app' //文字容器
             });
         })
