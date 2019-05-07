@@ -1,0 +1,539 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+.container{padding:0;}
+a:hover {
+    text-decoration: none;
+}
+
+.fR {
+    float: right;
+}
+
+.fL {
+    float: left;
+}
+
+.mtop_20 {
+    margin-top: 20px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.header {
+    background: #fff;
+    text-align: center;
+    background: #49a6fd;
+    background: -webkit-linear-gradient(#4ba7fd, #86cdfe);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#4ba7fd, #86cdfe);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#4ba7fd, #86cdfe);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#4ba7fd, #86cdfe);
+    /* 标准的语法 */
+}
+
+a.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+}
+
+a.logo:hover {
+    text-decoration: none;
+}
+
+.nav_an {
+    font-size: 16px;
+    line-height: 44px;
+    color: #333;
+    text-align: center;
+    background: #fff;
+}
+
+.nav_an a {
+    color: #333;
+    width: 100%;
+    display: inline-block;
+}
+
+.nav_an a:hover {
+    text-decoration: none;
+    position: relative;
+}
+
+.nav_an a i {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: #49a6fd;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -8px;
+    z-index: 100;
+    border-radius: 20px;
+    display: none;
+}
+
+.nav_an.nav_an_active a i {
+    display: block;
+}
+
+.nav_an:hover {
+    background: #f3f3f3;
+}
+
+.nav_an.nav_an_active a {
+    color: #49a6fd;
+}
+
+.Carousel_an {
+    padding: 5px 15px 15px 15px;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-inner {
+    border-radius: 6px;
+    -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 7px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, .1);
+}
+
+.module_A {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.module_A h3 {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    text-indent: 15px;
+    margin-bottom: 20px;
+}
+
+.module_A h3 a {
+    float: right;
+    margin-right: 16px;
+    color: #333;
+}
+
+.ul_app_x {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.ul_app_x li {
+    width: 70px;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.ul_app_x li h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ul_app_x li a {
+    text-decoration: none;
+}
+
+.ul_app_x li p {
+    text-align: center;
+}
+
+.ul_app_x li p.mb {
+    width: 100%;
+    font-size: 13px;
+    color: #b2c0cd;
+    text-align: center;
+    line-height: 13px;
+}
+
+.btn_download {
+    width: 54px;
+    height: 27px;
+    background: #e9f4ff;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13px;
+    color: #49a6fd;
+    border: none;
+    border-radius: 14px;
+}
+
+.btn_download.right_m {
+    margin: 14px 5px 0 0;
+}
+
+.icon_app {
+    width: 55px;
+    height: 55px;
+    border-radius: 9px;
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid #ddd;
+}
+
+.icon_app img {
+    width: 100%;
+    height: 100%;
+}
+
+.module_B {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.module_B.rank_left {
+    padding-left: 35px;
+}
+
+.module_B h3 {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.module_B h3 a {
+    float: right;
+    margin-right: 1px;
+    color: #333;
+}
+
+.module_B h3 a:hover {
+    text-decoration: none;
+}
+
+.div_app_y {
+    padding-left: 6px;
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+.app_brief {
+    float: left;
+    width: 160px;
+    margin-left: 15px;
+}
+
+.app_brief h5 {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.app_brief p.mb {
+    width: 100%;
+    font-size: 13px;
+    color: #b2c0cd;
+    text-align: left;
+    line-height: 13px;
+}
+
+.line_split {
+    width: 100%;
+    height: 5px;
+    background: #f3f3f3;
+    margin-bottom: 20px;
+}
+
+.num_rank {
+    position: absolute;
+    left: 13px;
+}
+
+.num_rank dd {
+    line-height: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.app_or {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 15px 0 10px 0;
+}
+
+.app_or:hover p {
+    color: #49a6fd
+}
+
+.icon_or {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+.icon_or img {
+    width: 100%;
+    height: 100%;
+}
+
+.app_or p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #333;
+}
+
+.nav {
+    height: 48px;
+    background: #fff;
+    font-size: 16px;
+    line-height: 48px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.back {
+    line-height: 48px;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    color: #333;
+}
+
+.back:hover {
+    text-decoration: none;
+}
+
+.app_detail {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icon_detail {
+    width: 74px;
+    height: 74px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.icon_detail img {
+    width: 100%;
+    height: 100%;
+}
+
+.app_detail h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    line-height: 24px;
+}
+
+.app_detail p.mb {
+    width: 100%;
+    font-size: 13px;
+    color: #b2c0cd;
+    text-align: center;
+    line-height: 13px;
+}
+
+.btn_download_D {
+    width: 240px;
+    height: 36px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    border: none;
+    border-radius: 18px;
+    background: #49a6fd;
+    background: -webkit-linear-gradient(to right, #4ba7fd, #86cdfe);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(to right, #4ba7fd, #86cdfe);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(to right, #4ba7fd, #86cdfe);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #4ba7fd, #86cdfe);
+    /* 标准的语法 */
+}
+
+.ul_details_x {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.ul_details_x li {
+    width: 115px;
+    height: 200px;
+    margin: 0 4px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ul_details_x li img {
+    width: 100%;
+    height: 100%;
+}
+
+.info_app {
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info_app p {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.wrap_btn_more {
+    width: 100%;
+    text-align: center;
+}
+
+span.more {
+    width: 72px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.open_info {
+    background: url(../images/icon_more_open.png) right center no-repeat;
+}
+
+.close_info {
+    background: url(../images/icon_more_close.png) right center no-repeat;
+}
+
+h3.h3_title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.avg-score-star,
+.comment-score {
+    position: relative;
+    display: inline-block;
+    width: 77px;
+    height: 13px;
+    background: url(../images/star_gray.png) no-repeat;
+    background-size: 77px 13px;
+}
+
+.mStar_a {
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+
+.avg-score-current,
+.score-current {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 13px;
+    background: url(../images/star_yellow.png) no-repeat;
+    background-size: 77px 13px;
+}
+
+.sta_evaluation {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+.sta_evaluation span {
+    float: left;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.list_evaluation {
+    border-top: 1px solid #eee;
+    padding: 15px
+}
+
+.list_evaluation ul {
+    padding: 0;
+}
+
+.list_evaluation ul li {
+    margin-bottom: 20px;
+}
+
+.list_evaluation ul li p {
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+h5.user {
+    font-size: 13px;
+    line-break: 26px;
+    color: #000;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+}
+
+.list_evaluation ul li span.time {
+    float: right;
+    font-size: 12px;
+    line-height: 18px;
+    color: #aaa;
+    font-weight: 200;
+}
