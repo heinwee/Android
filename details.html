@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=drvice-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
 
     <title>应用详情</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -159,6 +159,22 @@
                 mainCell: '.info_app' //文字容器
             });
         })
+    </script>
+
+
+    <script>
+        // 输入框不放大
+        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3) {
+                var phoneScale = parseInt(window.screen.width) / 230;
+                document.write('<meta name="viewport" content="width=230, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', user-scalable=no, target-densitydpi=device-dpi">');
+            } else {
+                document.write('<meta name="viewport" content="width=230, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=230, user-scalable=no, target-densitydpi=device-dpi">');
+        }
     </script>
 
 </body>
