@@ -162,21 +162,6 @@
     </script>
 
 
-    <script>
-        // 输入框不放大
-        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
-            var version = parseFloat(RegExp.$1);
-            if (version > 2.3) {
-                var phoneScale = parseInt(window.screen.width) / 230;
-                document.write('<meta name="viewport" content="width=230, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', user-scalable=no, target-densitydpi=device-dpi">');
-            } else {
-                document.write('<meta name="viewport" content="width=230, target-densitydpi=device-dpi">');
-            }
-        } else {
-            document.write('<meta name="viewport" content="width=230, user-scalable=no, target-densitydpi=device-dpi">');
-        }
-    </script>
-
 </body>
 
 </html>
