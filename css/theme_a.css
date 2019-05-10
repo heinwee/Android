@@ -2,6 +2,10 @@
 
 /* CSS Document */
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     padding: 0;
 }
