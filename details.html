@@ -1,14 +1,16 @@
 <!doctype html>
-<html>
-
-<head>
+<html><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0，user-scalable=no;" name="viewport">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0，user-scalable=no;">
 
     <title>应用详情</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/theme_a.css" rel="stylesheet">
+<style>
 
+
+	
+</style>
 
 </head>
 
@@ -28,7 +30,7 @@
                     </div>
                     <h4>小红书</h4>
                     <p class="mb">1259万下载&nbsp;&nbsp;|&nbsp;&nbsp;4月30日更新</p>
-                    <p><button class="btn_download_D mtop_20">下载</button></p>
+                    <p><a class="btn_download_D mtop_20">下载</a></p>
 
                 </div>
                 <ul class="ul_details_x">
@@ -38,16 +40,22 @@
                     <li><img src="images/img_detail_1.png" /> </li>
                     <li><img src="images/img_detail_1.png" /> </li>
                 </ul>
-                <div class="module_B">
-                    <div class="info_app">
-                        <p>【小红书APP】年轻人的生活方式平台，在这里发现美好、真实、多元的世界，标记吃穿玩乐买的生活日常。</p>
-                        <p>【明星达人】时髦精黄子韬、实在人张雨绮、养生达人景甜、造型师林允、酷女孩欧阳娜娜、国际超模Karlie Kloss、好莱坞名媛金·卡戴珊……在小红书和偶像做邻居，从不一样的笔记中看到人气明星生活中的另一面。</p>
-                        <p>【热门话题】get 潮流生活方式，从大热网综#国风美少年，到游戏战场#农药吃鸡初体验，从新奇惊艳的#牛奶辛拉面，到温暖励志的#我的高考故事，热门的话题活动都在小红书！</p>
-                        <p>【美颜滤镜】梦幻效果的美颜滤镜相机，重新认识世界和你。打开小红书相机直接拍拍拍，扩展社交圈，让你的照片和短视频成为全世界小红薯们循环播放的存在吧！</p>
-                        <p>【全球好物】通过社区大数据，精挑细选年轻人最潮流、最好用、最新奇的热门商品；聚集国内外或知名或小众的品牌，带你找到全世界的好东西。</p>
-                        <p>快下载小红书，和全世界好看有趣的年轻人一起标记生活吧！</p>
+                <div style="margin-bottom: 10px;">
+                   <div id="info_app">
+   <p>【小红书APP】年轻人的生活方式平台，在这里发现美好、真实、多元的世界，标记吃穿玩乐买的生活日常。</p>
+            <p>【明星达人】时髦精黄子韬、实在人张雨绮、养生达人景甜、造型师林允、酷女孩欧阳娜娜、国际超模Karlie Kloss、好莱坞名媛金·卡戴珊……在小红书和偶像做邻居，从不一样的笔记中看到人气明星生活中的另一面。</p>
+            <p>【热门话题】get 潮流生活方式，从大热网综#国风美少年，到游戏战场#农药吃鸡初体验，从新奇惊艳的#牛奶辛拉面，到温暖励志的#我的高考故事，热门的话题活动都在小红书！</p>
+            <p>【美颜滤镜】梦幻效果的美颜滤镜相机，重新认识世界和你。打开小红书相机直接拍拍拍，扩展社交圈，让你的照片和短视频成为全世界小红薯们循环播放的存在吧！</p>
+            <p>【全球好物】通过社区大数据，精挑细选年轻人最潮流、最好用、最新奇的热门商品；聚集国内外或知名或小众的品牌，带你找到全世界的好东西。</p>
+            <p>快下载小红书，和全世界好看有趣的年轻人一起标记生活吧！</p>
 
-                    </div>
+
+  
+  </div>
+					<div class="wrap_btn_more">
+	 <div id="gradient"></div>
+  <div id="read-more"></div>
+					</div>
                 </div>
 
 
@@ -116,50 +124,33 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-        (function($) {
-            $.fn.moreText = function(options) {
-                var defaults = {
-                    maxLength: 200,
-                    mainCell: ".info_app",
-                    openBtn: '展开全部',
-                    closeBtn: '收起介绍'
-                }
-                return this.each(function() {
-                    var _this = $(this);
-
-                    var opts = $.extend({}, defaults, options);
-                    var maxLength = opts.maxLength;
-                    var TextBox = $(opts.mainCell, _this);
-                    var openBtn = opts.openBtn;
-                    var closeBtn = opts.closeBtn;
-
-                    var countText = TextBox.html();
-                    var newHtml = '';
-                    if (countText.length > maxLength) {
-                        newHtml = countText.substring(0, maxLength) + '...<div class="wrap_btn_more"><span class="more open_info">' + openBtn + '</span></div>';
-                    } else {
-                        newHtml = countText;
-                    }
-                    TextBox.html(newHtml);
-                    TextBox.on("click", ".more", function() {
-                        if ($(this).text() == openBtn) {
-                            TextBox.html(countText + ' <div class="wrap_btn_more"><span class="more close_info">' + closeBtn + '</span></div>');
-                        } else {
-                            TextBox.html(newHtml);
-                        }
-                    })
-                })
-            }
-        })(jQuery);
-
-        $(function() {
-            $(".module_B").moreText({
-                maxLength: 200, //默认最大显示字数，超过...
-                mainCell: '.info_app' //文字容器
-            });
-        })
-    </script>
+    <script type="text/javascript">
+$(function(){
+ var slideHeight = 70; // px
+ var defHeight = $('#info_app').height();
+ if(defHeight >= slideHeight){
+  $('#info_app').css('height' , slideHeight + 'px');
+  $('#read-more').append('<a href="#">展开全部</a>');
+  $('#read-more a').click(function(){
+   var curHeight = $('#info_app').height();
+   if(curHeight == slideHeight){
+    $('#info_app').animate({
+     height: defHeight
+    }, "normal");
+    $('#read-more a').html('收起介绍');
+    $('#gradient').fadeOut();
+   }else{
+    $('#info_app').animate({
+     height: slideHeight
+    }, "normal");
+    $('#read-more a').html('展开全部');
+    $('#gradient').fadeIn();
+   }
+   return false;
+  });  
+ }
+});
+</script>
 
 </body>
 
